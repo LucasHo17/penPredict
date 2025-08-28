@@ -26,7 +26,7 @@ const teams = [
     return (
       <div className="setup-page">
         <video autoPlay loop muted playsInline id="bg-video">
-          <source src="/public/setup_form_wall.mp4" type="video/mp4" />
+          <source src="/setup_form_wall.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <form className="setup-form" onSubmit={handleSubmit}>
