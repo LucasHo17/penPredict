@@ -27,6 +27,8 @@ export default function GameBoard(){
     const handleClick = async zone => {
         if (result) return;
         setClickedZone(zone);
+       // trigger a quick visual "shoot" pulse (cells will animate via CSS)
+       // keeper animation will start when keeperDirection is set below
         try {
             const {diveZones, probabilities} = await predictDive({
                 team, 
@@ -80,11 +82,13 @@ export default function GameBoard(){
                 className='sound-icon'
                 onClick={toggleCrowdSound}
                 />
-                <audio ref={audioRef} src="/public/football-crowd.mp3" />
+                <audio ref={audioRef} src="/football-crowd.mp3" />
             </div>
             
             <div className = "field-container">
-                <h2>Bet6969</h2>
+                {/* subtle net overlay behind the goal */}
+                <div className="net-overlay" aria-hidden="true" />
+                <h2>12-yard Cup</h2>
                 <div className = "goal-grid">
                     <div className="crossbar" />
                     {[1,2,3,4,5,6,7,8,9].map(n=>{
@@ -118,7 +122,7 @@ export default function GameBoard(){
                         <p>
                         {result === "success"
                             ? '🎉 Goal! You avoided the keeper’s dive.'
-                            : 'Blocked motherfff...'}
+                            : 'Blocked'}
                         </p>
                         <button onClick={resetGame}>Play Again</button>
                     </div> 

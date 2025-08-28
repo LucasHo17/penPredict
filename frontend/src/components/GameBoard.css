@@ -3,7 +3,7 @@ html, body {
   margin: 0;           
 }
 .game-page {
-  background-image: url('/goal.jpg');
+  background-image: url('/football_field.jpg');
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -46,6 +46,8 @@ html, body {
   /* Background representing the net */
   border: 8px solid white;
   border-radius: 8px;
+  background: linear-gradient(rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  overflow: hidden;
 }
 
 /* Simulate the posts */
