@@ -1,6 +1,6 @@
 import {React, useState, useRef} from 'react';
 import {predictDive} from '../api';
-import './gameBoard.css';
+import './GameBoard.css';
 import { FaSoundcloud } from "react-icons/fa6";
 
 import { useLocation, useNavigate } from 'react-router-dom';
