@@ -34,7 +34,9 @@ An interactive web application that uses machine learning to predict goalkeeper 
 ### Backend Setup
 
 1. Navigate to the backend directory:
-cd backend2. Create and activate a virtual environment (if not already created):h
+cd backend
+
+Create and activate a virtual environment (if not already created):
 # Windows
 python -m venv ../venv
 ../venv\Scripts\Activate.ps1
@@ -44,8 +46,9 @@ python3 -m venv ../venv
 source ../venv/bin/activate3. Install Python dependencies:
 pip install -r requirements.txt### Frontend Setup
 
-1. Navigate to the frontend directory:h
-cd frontend2. Install Node dependencies:
+1. Navigate to the frontend directory:
+cd frontend
+Install Node dependencies:
 npm install## Running the Application
 
 ### Start the Backend Server
